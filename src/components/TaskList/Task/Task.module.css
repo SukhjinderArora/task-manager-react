@@ -1,0 +1,10 @@
+.task {
+  display: block;
+  border: 1px solid black;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.done {
+  text-decoration: line-through;
+}
