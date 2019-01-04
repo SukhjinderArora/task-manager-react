@@ -1,5 +1,6 @@
 import React from 'react';
 import Task from './Task/Task';
+import style from './TaskList.module.css';
 
 const TaskList = (props) => {
   const tasks = props.tasks.map((task, index) => {
@@ -12,7 +13,7 @@ const TaskList = (props) => {
       />;
   });
   return (
-    <div>
+    <div className={style.taskList}>
       {tasks}
     </div>
   );

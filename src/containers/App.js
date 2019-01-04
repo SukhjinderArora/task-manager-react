@@ -8,13 +8,10 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-
     /**
      * taskList = [{ taskDescription: '', taskStatus: 'done'}]
      */
-
-
-    if (localStorage.getItem('tasks') !== 'undefined') {
+    if (localStorage.getItem('tasks')) {
       const tasks = JSON.parse(localStorage.getItem('tasks'));
       this.state = {
         taskInput: '',
@@ -30,7 +27,6 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-    console.log('Inside TasksList Component');
     localStorage.setItem('tasks', JSON.stringify(this.state.tasksList));
   }
 

@@ -2,15 +2,24 @@ import React from 'react';
 import style from './Task.module.css';
 
 const Task = (props) => {
-  let taskDone = '';
+  let taskDesc = style.taskDesc;
   if(props.isChecked) {
-    taskDone = style.done;
+    taskDesc = taskDesc + ' ' + style.done;
   }
   return (
     <div className={style.task}>
-      <p className={taskDone}>{props.description}</p>
-      <input type="checkbox" onChange={props.checkboxHandler} checked={props.isChecked}/>
-      <button onClick={props.deleteTask}>&times;</button>
+      <p className={taskDesc}>{props.description}</p>
+      <div className={style.icon}>
+        <label className={style.container}>
+          <input
+            className={style.input}
+            type="checkbox"
+            onChange={props.checkboxHandler}
+            checked={props.isChecked} />
+          <span className={style.checkmark}></span>
+        </label>
+        <button className={style.deleteBtn} onClick={props.deleteTask}>X</button>
+      </div>
     </div>
   );
 }

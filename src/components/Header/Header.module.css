@@ -1,0 +1,18 @@
+.header {
+  background: rgba(138, 27, 195, .95);
+  color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .3);
+  padding: 2rem 0;
+}
+
+.heading__primary {
+  font-size: 5rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.heading__secondary {
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
