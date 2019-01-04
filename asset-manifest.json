@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.b720f874.chunk.css",
-  "main.js": "/static/js/main.f3ec1eda.chunk.js",
-  "main.js.map": "/static/js/main.f3ec1eda.chunk.js.map",
-  "static/js/1.8c4cf852.chunk.js": "/static/js/1.8c4cf852.chunk.js",
-  "static/js/1.8c4cf852.chunk.js.map": "/static/js/1.8c4cf852.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.b720f874.chunk.css.map": "/static/css/main.b720f874.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.7180312ed1c83450565e789489044ffe.js": "/precache-manifest.7180312ed1c83450565e789489044ffe.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/task-manager-react/static/css/main.b720f874.chunk.css",
+  "main.js": "/task-manager-react/static/js/main.07afafd3.chunk.js",
+  "main.js.map": "/task-manager-react/static/js/main.07afafd3.chunk.js.map",
+  "static/js/1.8c4cf852.chunk.js": "/task-manager-react/static/js/1.8c4cf852.chunk.js",
+  "static/js/1.8c4cf852.chunk.js.map": "/task-manager-react/static/js/1.8c4cf852.chunk.js.map",
+  "runtime~main.js": "/task-manager-react/static/js/runtime~main.23fc44fe.js",
+  "runtime~main.js.map": "/task-manager-react/static/js/runtime~main.23fc44fe.js.map",
+  "static/css/main.b720f874.chunk.css.map": "/task-manager-react/static/css/main.b720f874.chunk.css.map",
+  "index.html": "/task-manager-react/index.html",
+  "precache-manifest.863039a0e089cf735869c686b3bdf619.js": "/task-manager-react/precache-manifest.863039a0e089cf735869c686b3bdf619.js",
+  "service-worker.js": "/task-manager-react/service-worker.js"
 }
