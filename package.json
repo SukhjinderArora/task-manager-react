@@ -2,6 +2,7 @@
   "name": "task-manager-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://task-manager-react.netlify.com/",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",

@@ -10,3 +10,5 @@
 
 ## Live Version
 
+[Live Version](https://task-manager-react.netlify.com/)
+
