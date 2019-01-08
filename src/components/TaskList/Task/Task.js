@@ -18,7 +18,7 @@ const Task = (props) => {
             checked={props.isChecked} />
           <span className={style.checkmark}></span>
         </label>
-        <button className={style.deleteBtn} onClick={props.deleteTask}>X</button>
+        <button className={style.deleteBtn} onClick={props.deleteTaskHandler}>X</button>
       </div>
     </div>
   );

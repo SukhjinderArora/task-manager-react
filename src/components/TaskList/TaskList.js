@@ -9,7 +9,7 @@ const TaskList = (props) => {
       checkboxHandler={props.checkboxHandler.bind(null, index)}
       key={index}
       isChecked={task.taskStatus}
-      deleteTask={props.deleteTask.bind(null, index)}
+      deleteTaskHandler={props.deleteTaskHandler.bind(null, index)}
       />;
   });
   return (

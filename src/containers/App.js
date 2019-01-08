@@ -30,13 +30,13 @@ class App extends Component {
     localStorage.setItem('tasks', JSON.stringify(this.state.tasksList));
   }
 
-  inputChangeHandler = (event) => {
+  _inputChangeHandler = (event) => {
     this.setState({
       taskInput: event.target.value
     })
   };
 
-  formSubmitHandler = (event) => {
+  _formSubmitHandler = (event) => {
     event.preventDefault();
     const taskDescription = this.state.taskInput.trim();
     if(taskDescription === '') return;
@@ -53,7 +53,7 @@ class App extends Component {
     });
   };
 
-  checkboxHandler = (index, event) => {
+  _checkboxHandler = (index, event) => {
     const tasks = [ ...this.state.tasksList ];
     tasks[index].taskStatus = !tasks[index].taskStatus;
 
@@ -62,7 +62,7 @@ class App extends Component {
     });
   };
 
-  deleteTaskHandler = (index, event) => {
+  _deleteTaskHandler = (index, event) => {
     const tasks = [ ...this.state.tasksList ];
     tasks.splice(index, 1);
     this.setState({
@@ -70,20 +70,25 @@ class App extends Component {
     });
   };
 
+  generateProps = () => {
+    return {
+      text: this.state.taskInput, 
+      changeHandler: this._inputChangeHandler,
+      formSubmitHandler: this._formSubmitHandler,
+      tasks: this.state.tasksList,
+      checkboxHandler: this._checkboxHandler,
+      deleteTaskHandler: this._deleteTaskHandler
+    };
+  }
+
   render() {
+    const props = this.generateProps();
+
     return (
       <div className="App">
         <Header />
-        <Form 
-          text={this.state.taskInput} 
-          changeHandler={this.inputChangeHandler} 
-          formSubmit={this.formSubmitHandler} 
-        />
-        <TaskList 
-          tasks={this.state.tasksList}
-          checkboxHandler={this.checkboxHandler}
-          deleteTask={this.deleteTaskHandler}
-        />
+        <Form {...props}/>
+        <TaskList {...props}/>
       </div>
     );
   }
